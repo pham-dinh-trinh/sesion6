@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Min of array</title>
+</head>
+<body>
+<script>
+    function checkMin(number1,number2,number3) {
+        let array = [number1,number2,number3];
+        let min = array[0];
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] < min) {
+                min = array[i];
+            }
+        }
+        return min;
+    }
+    let number1 = parseInt(prompt('Input number 1'));
+    let number2 = parseInt(prompt('Input number 2'));
+    let number3 = parseInt(prompt('Input number 3'));
+    let result = checkMin(number1,number2,number3);
+    alert(result);
+</script>
+</body>
+</html>
